@@ -12,13 +12,15 @@ Set
         /   weight
             volume  / ;
 
-Table   cap(i,k)  "capacity of plane"
+Table
+    cap(i,k) "capacity of plane"
             weight  volume 
     front   10      6800
     centre  16      8700
     rear    8       5300 ;
 
-Table   req(j,k)  "cargo specs"
+Table
+    req(j,k) "cargo specs"
             weight  volume 
     c1      18      480
     c2      15      650 

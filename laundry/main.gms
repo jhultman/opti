@@ -9,7 +9,8 @@ Set
     /   bought
         sold    / ;
 
-Table   p(i,j) "price in dollars per gallon substance i"
+Table
+    p(i,j) "price in dollars per gallon substance i"
         bought  sold
     1   0.00    0.80
     2   0.00    0.00

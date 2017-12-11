@@ -18,15 +18,16 @@ Free Variable
 Equations
     obj,init,final,constr(t) ;
 
+* we want to minimize total nominal payment
 obj..z =e= 60*p ;
 
-*Initial EOM balance is principal plus interest
+* initial EOM balance is principal plus interest
 init.. bal('1') =e= principal*(1+r/12)-p ;
 
-*Loan must be paid in full
+* loan must be paid in full
 final.. bal('60') =e= 0 ;
 
-*Flow of money between periods
+* flow of money between periods
 constr(t)$( ord(t) > 1 ).. bal(t) =e= bal(t-1)*(1+r/12)-p ;
 
 Model

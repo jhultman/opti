@@ -8,7 +8,8 @@ Set
         /   x
             y       / ;
 
-Table   treq(i,j)  "time needed per unit good i on machine j"
+Table 
+    treq(i,j) "time needed per unit good i on machine j"
             x       y 
     1       10      27
     2       12      19
@@ -49,6 +50,7 @@ Equations
     obj, time(j), space, twice1, twice2, good1a, good1b, goods(i);
 
 * we want to maximize profit
+
 obj .. z =e= sum(i, p(i)*n(i)) ;
 
 * there are only 35 hours in a work week 

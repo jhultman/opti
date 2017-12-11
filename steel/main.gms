@@ -26,14 +26,16 @@ Set
         /   cost 
             avail    /  ;
 
-Table   elt(i,k)    "material requirements"
+Table
+    elt(i,k) "material requirements"
                 geq    leq 
     carbon      3.0    3.5
     chrome      0.3    0.45
     manganese   1.35   1.65
     silicon     2.7    3.0  ;
 
-Table   mat(j,i)    "material requirements"
+Table
+    mat(j,i) "material requirements"
                      carbon    chrome    manganese    silicon 
     pig-iron-1       4.0       0.0       0.9          2.25
     pig-iron-2       0.0       10.0      4.5          15.0
@@ -47,7 +49,8 @@ Table   mat(j,i)    "material requirements"
     steel-2          0.1       0.0       0.3          0.0
     steel-3          0.1       0.0       0.3          0.0   ;
 
-Table   specs(j,l)  "costs and available amounts"
+Table
+    specs(j,l) "costs and available amounts"
                       cost      avail
     pig-iron-1        0.03      inf 
     pig-iron-2        0.0645    inf 
